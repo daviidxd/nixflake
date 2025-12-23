@@ -7,7 +7,7 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      /hardware-configuration.nix
+      ./hardware-configuration.nix
 	# home-manager/nixos
     ];
 
@@ -109,8 +109,11 @@
 	bat
 	tree
   ];
+	# Fix Dirty warn
+	nix.settings.warn-dirty = false;
 
-	  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+	# Nix Flake
+	 nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
