@@ -1,4 +1,5 @@
 {
+	imports = [./programs/ghostty/ghostty.nix];
 	programs.vesktop.enable = true;
 	programs.neovim.enable = true;
 	programs.fastfetch.enable = true;
