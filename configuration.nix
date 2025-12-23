@@ -100,8 +100,6 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
 	vim
-	helix
-	ghostty
 	git
 	tealdeer
 	xclip
@@ -113,6 +111,11 @@
 
 	# Nix Flake
 	 nix.settings.experimental-features = [ "nix-command" "flakes" ];
+	
+	# Fix til Ghostty
+	environment.sessionVariables = {
+	  GTK_IM_MODULE = "simple";
+	};
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
