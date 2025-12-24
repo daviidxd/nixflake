@@ -77,7 +77,7 @@ setup_server("lua_ls", {
   settings = {
     Lua = {
       diagnostics = {
-        globals = { "vim" },\
+        globals = { "vim" },
       },
     },
   },
