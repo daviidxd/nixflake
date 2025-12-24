@@ -109,6 +109,7 @@
     nodejs
     ripgrep
     fd
+    tailwindcss
   ];
 	# Fix Dirty warn
 	nix.settings.warn-dirty = false;

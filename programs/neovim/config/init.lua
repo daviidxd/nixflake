@@ -8,7 +8,7 @@ vim.opt.relativenumber = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
-vim.opt.smartindent = true
+vim.opt.smartindent = false
 vim.opt.wrap = false
 vim.opt.termguicolors = true
 -----------------------------------------------------------------------------
@@ -42,15 +42,24 @@ cmp.setup({
     completion = cmp.config.window.bordered(),
     documentation = cmp.config.window.bordered(),
   },
-  mapping = cmp.mapping.preset.insert({
+
+mapping = cmp.mapping.preset.insert({
     ["<C-Space>"] = cmp.mapping.complete(),
-    ["<CR>"] = cmp.mapping.confirm({ select = true }),
+    ["<C-e>"] = cmp.mapping.abort(),
+    ["<CR>"] = cmp.mapping.confirm({
+      select = false,
+    }),
     ["<Tab>"] = cmp.mapping(function(fallback)
-      if cmp.visible() then cmp.select_next_item()
-      elseif luasnip.expand_or_jumpable() then luasnip.expand_or_jump()
-      else fallback() end
+      if cmp.visible() then
+        cmp.select_next_item()
+      elseif luasnip.expand_or_jumpable() then
+        luasnip.expand_or_jump()
+      else
+        fallback()
+      end
     end, { "i", "s" }),
   }),
+
   sources = cmp.config.sources({
     { name = "nvim_lsp" },
     { name = "luasnip" },
