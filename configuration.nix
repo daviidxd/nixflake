@@ -105,6 +105,10 @@
 	xclip
 	bat
 	tree
+    lua-language-server
+    nodejs
+    ripgrep
+    fd
   ];
 	# Fix Dirty warn
 	nix.settings.warn-dirty = false;
