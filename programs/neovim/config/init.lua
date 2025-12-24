@@ -92,17 +92,17 @@ setup_server("lua_ls", {
   },
 })
 
--- 2. HTML (html)
-setup_server("html")
+-- CSS
+setup_server("tailwindcss")
 
--- 3. CSS (cssls)
-setup_server("cssls")
+-- JS
+setup_server("vtsls")
 
--- 4. CSS Variables (css_variables)
-setup_server("css_variables")
+-- Astro
+setup_server("astro")
 
--- 5. CSS Modules (cssmodules_ls)
-setup_server("cssmodules_ls")
+-- Emmet
+setup_server("emmet_language_server")
 -----------------------------------------------------------------------------
 -- 4. Other Plugins
 -----------------------------------------------------------------------------

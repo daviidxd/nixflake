@@ -21,6 +21,16 @@ plugins = with pkgs.vimPlugins; [
     mini-nvim
     auto-save-nvim
   ];
-  extraLuaConfig = builtins.readFile ./config/init.lua;
+
+extraPackages = with pkgs; [
+    tailwindcss-language-server
+    lua-language-server
+    astro-language-server
+    vtsls
+    emmet-language-server
+];
+
+
+    extraLuaConfig = builtins.readFile ./config/init.lua;
 };
 }
