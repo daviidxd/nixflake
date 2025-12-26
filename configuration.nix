@@ -110,6 +110,7 @@
     ripgrep
     fd
     tailwindcss
+    libreoffice
   ];
 	# Fix Dirty warn
 	nix.settings.warn-dirty = false;
