@@ -111,6 +111,7 @@
     fd
     tailwindcss
     libreoffice
+    flatpak
   ];
 	# Fix Dirty warn
 	nix.settings.warn-dirty = false;
