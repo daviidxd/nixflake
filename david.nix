@@ -1,3 +1,4 @@
+    {pkgs,...}:
 {
 	imports = [./programs/ghostty/ghostty.nix
 		./programs/neovim/neovim.nix];
@@ -5,6 +6,8 @@
 	programs.neovim.enable = true;
 	programs.fastfetch.enable = true;
 	programs.ghostty.enable = true;
-	
+    xdg.portal.enable = true;
+    xdg.portal.extraPortals = with pkgs; [ xdg-desktop-portal-gtk ];
+
 	home.stateVersion = "24.11"; 
 }
