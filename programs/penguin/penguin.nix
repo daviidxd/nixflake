@@ -9,10 +9,10 @@
 
     initContent = ''
     echo -e "\e[35m"
-        .---.
-      / o v o \
-     ( <     > )
-      '--^^--'
+      .---.
+    / o v o \
+   (         )
+    \_vv_vv_/
     EOF
     echo -e "\e[0m"
     '';
