@@ -1,7 +1,8 @@
     {pkgs,...}:
 {
-	imports = [./programs/ghostty/ghostty.nix
-		./programs/neovim/neovim.nix];
+	imports = [./programs/ghostty/ghostty.nix 
+                ./programs/neovim/neovim.nix
+                ./programs/penguin/penguin.nix];
 	programs.vesktop.enable = true;
 	programs.neovim.enable = true;
 	programs.fastfetch.enable = true;
