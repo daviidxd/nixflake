@@ -8,15 +8,15 @@
 
 
     initContent = ''
-    echo -e "\e[35m"
-    cat <<'EOF'
-      .---.
-    / o v o \
-   (         )
-    \_vv_vv_/
-    EOF
-    echo -e "\e[0m"
-    '';
+                    echo -e "\e[35m"
+                    cat <<'EOF'
+                        .---.
+                      / o v o \
+                     (         )
+                      \_vv_vv_/
+                    EOF
+                    echo -e "\e[0m"
+                    '';
 
     };
     
