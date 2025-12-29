@@ -111,10 +111,12 @@
     fd
     tailwindcss
     libreoffice
-    flatpak
   ];
 	# Fix Dirty warn
 	nix.settings.warn-dirty = false;
+    
+    # Install Flatpak
+    services.flatpak.enable = true;
 
 	# Nix Flake
 	 nix.settings.experimental-features = [ "nix-command" "flakes" ];
