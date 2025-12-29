@@ -9,6 +9,7 @@
 
     initContent = ''
     echo -e "\e[35m"
+    cat <<'EOF'
       .---.
     / o v o \
    (         )
