@@ -111,6 +111,11 @@
     fd
     tailwindcss
     libreoffice
+    foremost
+    util-linux
+    steghide
+    exiftool
+    outguess
   ];
 	# Fix Dirty warn
 	nix.settings.warn-dirty = false;

@@ -5,6 +5,7 @@
         theme = "Embers Dark";
         command = "zsh";
         font-family = "Meslo";
+        maximize = true;
       
         # Keybind Config
         keybind = [
