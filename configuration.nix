@@ -116,6 +116,7 @@
     steghide
     exiftool
     outguess
+    toybox
   ];
 	# Fix Dirty warn
 	nix.settings.warn-dirty = false;
