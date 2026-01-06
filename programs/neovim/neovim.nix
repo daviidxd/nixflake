@@ -28,6 +28,9 @@ extraPackages = with pkgs; [
     astro-language-server
     vtsls
     emmet-language-server
+    clang-tools
+    gcc
+    bear
 ];
 
 

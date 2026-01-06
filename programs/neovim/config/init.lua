@@ -103,6 +103,16 @@ setup_server("astro")
 
 -- Emmet
 setup_server("emmet_language_server")
+
+-- C / C++
+setup_server("clangd", {
+  cmd = {
+    "clangd",
+    "--background-index",
+    "--clang-tidy",
+    "--query-driver=/run/current-system/sw/bin/g++",
+  },
+})
 -----------------------------------------------------------------------------
 -- 4. Other Plugins
 -----------------------------------------------------------------------------
