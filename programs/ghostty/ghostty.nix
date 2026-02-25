@@ -6,7 +6,8 @@
         command = "zsh";
         font-family = "Meslo";
         maximize = true;
-      
+        font-feature = ["+calt" "+liga" "+dlig"];
+
         # Keybind Config
         keybind = [
         "ctrl+r=reload_config"

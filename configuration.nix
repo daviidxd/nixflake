@@ -117,6 +117,7 @@
     exiftool
     outguess
     toybox
+    gcc
   ];
 	# Fix Dirty warn
 	nix.settings.warn-dirty = false;
