@@ -118,6 +118,7 @@
     outguess
     toybox
     gcc
+    mysql-workbench
   ];
 	# Fix Dirty warn
 	nix.settings.warn-dirty = false;
