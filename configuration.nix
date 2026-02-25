@@ -125,6 +125,10 @@
     # Install Flatpak
     services.flatpak.enable = true;
 
+    # Install MySQL
+    services.mysql.enable = true;
+    services.mysql.package = pkgs.mysql84;
+
 	# Nix Flake
 	 nix.settings.experimental-features = [ "nix-command" "flakes" ];
 	
